@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
-class H1 extends StatelessWidget {
+class Heading extends StatelessWidget {
   final String text;
   final Color color;
   final Color bgColor;
   final num fontSize;
   final num fontWeight;
+  final num defaultFontSize;
+  final num defaultFontWeight;
   final num margin;
   final num padding;
   final Function() callBack;
 
-  H1({
+  Heading({
     this.color,
     this.bgColor,
     this.margin,
@@ -18,6 +20,8 @@ class H1 extends StatelessWidget {
     this.callBack,
     this.fontSize,
     this.fontWeight,
+    this.defaultFontSize,
+    this.defaultFontWeight,
     @required this.text,
   });
 
@@ -38,13 +42,13 @@ class H1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(margin.toDouble()),
+      padding: EdgeInsets.all(margin != null ? margin.toDouble(): 0.0),
       child: Container(
         decoration: BoxDecoration(
           color: bgColor,
         ),
         child: Padding(
-          padding: EdgeInsets.all(padding.toDouble()),
+          padding: EdgeInsets.all(padding != null ? padding.toDouble() : 0.0),
           child: GestureDetector(
             onTap: callBack,
             child: Text(
@@ -52,9 +56,9 @@ class H1 extends StatelessWidget {
               style: TextStyle(
                 color: color,
                 fontSize:
-                    fontSize != null ? fontSize.toDouble() : 46.0 / density,
+                    fontSize != null ? fontSize.toDouble() : defaultFontSize,
                 fontWeight: _fontWeight[
-                    fontWeight != null ? ((fontWeight % 100) - 1) : 8],
+                    fontWeight != null ? ((fontWeight / 100).toInt() - 1) : defaultFontWeight],
                 letterSpacing: 1.5,
               ),
             ),
@@ -64,3 +68,5 @@ class H1 extends StatelessWidget {
     );
   }
 }
+
+

@@ -1,3 +1,3 @@
 library html_widgets;
 
-export 'package:html_widgets/src/H1.dart';
+export 'package:html_widgets/src/Heading.dart';
