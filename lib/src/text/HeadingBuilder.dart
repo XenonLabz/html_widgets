@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Heading extends StatelessWidget {
+// ignore: must_be_immutable
+class HeadingBuilder extends StatelessWidget {
   final String text;
   final Color color;
   final Color bgColor;
@@ -12,7 +13,7 @@ class Heading extends StatelessWidget {
   final num padding;
   final Function() callBack;
 
-  Heading({
+  HeadingBuilder({
     this.color,
     this.bgColor,
     this.margin,
@@ -20,8 +21,8 @@ class Heading extends StatelessWidget {
     this.callBack,
     this.fontSize,
     this.fontWeight,
-    this.defaultFontSize,
-    this.defaultFontWeight,
+    @required this.defaultFontSize,
+    @required this.defaultFontWeight,
     @required this.text,
   });
 
@@ -42,7 +43,7 @@ class Heading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(margin != null ? margin.toDouble(): 0.0),
+      padding: EdgeInsets.all(margin != null ? margin.toDouble() : 0.0),
       child: Container(
         decoration: BoxDecoration(
           color: bgColor,
@@ -57,8 +58,9 @@ class Heading extends StatelessWidget {
                 color: color,
                 fontSize:
                     fontSize != null ? fontSize.toDouble() : defaultFontSize,
-                fontWeight: _fontWeight[
-                    fontWeight != null ? ((fontWeight / 100).toInt() - 1) : defaultFontWeight],
+                fontWeight: _fontWeight[fontWeight != null
+                    ? ((fontWeight ~/ 100) - 1)
+                    : defaultFontWeight],
                 letterSpacing: 1.5,
               ),
             ),
@@ -68,5 +70,3 @@ class Heading extends StatelessWidget {
     );
   }
 }
-
-

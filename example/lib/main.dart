@@ -41,13 +41,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Heading(
+            H1(
               text: "Nantha is great",
               color: Color(0xFF345628),
               bgColor: Color(0xFF000000),
               padding: 20,
               fontWeight: 700,
-              callBack: (){
+              callBack: () {
                 print("heloo");
               },
               fontSize: 30,
