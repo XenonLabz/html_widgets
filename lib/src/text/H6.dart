@@ -9,14 +9,14 @@ class H6 extends StatelessWidget {
   final num fontWeight;
   final num margin;
   final num padding;
-  final Function() callBack;
+  final Function() onClick;
 
   H6({
     this.color,
     this.bgColor,
     this.margin,
     this.padding,
-    this.callBack,
+    this.onClick,
     this.fontSize,
     this.fontWeight,
     @required this.text,
@@ -27,14 +27,14 @@ class H6 extends StatelessWidget {
     return HeadingBuilder(
       text: text,
       defaultFontSize: 11.2,
-      defaultFontWeight: 700,
+      defaultFontWeight: 6,
       color: color,
       bgColor: bgColor,
       fontSize: fontSize,
       fontWeight: fontWeight,
       padding: padding,
       margin: margin,
-      callBack: callBack,
+      callBack: onClick,
     );
   }
 }

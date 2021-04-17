@@ -9,14 +9,14 @@ class P extends StatelessWidget {
   final num fontWeight;
   final num margin;
   final num padding;
-  final Function() callBack;
+  final Function() onClick;
 
   P({
     this.color,
     this.bgColor,
     this.margin,
     this.padding,
-    this.callBack,
+    this.onClick,
     this.fontSize,
     this.fontWeight,
     @required this.text,
@@ -26,15 +26,15 @@ class P extends StatelessWidget {
   Widget build(BuildContext context) {
     return HeadingBuilder(
       text: text,
-      defaultFontSize: 40.0,
-      defaultFontWeight: 700,
+      defaultFontSize: 16.0,
+      defaultFontWeight: 5,
       color: color,
       bgColor: bgColor,
       fontSize: fontSize,
       fontWeight: fontWeight,
       padding: padding,
       margin: margin,
-      callBack: callBack,
+      callBack: onClick,
     );
   }
 }
