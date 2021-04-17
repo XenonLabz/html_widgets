@@ -8,13 +8,11 @@ class HTMLTable extends StatelessWidget {
   final double height;
 
   HTMLTable({
-    this.columns,
-    this.rows,
     this.height,
+    @required this.columns,
+    @required this.rows,
+ 
   });
-
-
-
 
   @override
   Widget build(BuildContext context) {
