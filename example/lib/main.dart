@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:html_widgets/html_widgets.dart';
 
+
+
 void main() {
   runApp(MyApp());
 }
@@ -43,7 +45,6 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             H1(
               text: "Heading 1",
@@ -67,11 +68,13 @@ class _MyHomePageState extends State<MyHomePage> {
               onClick: () {
                 getcb("Heading 2");
               },
-            ), 
+            ),
+
             HTMLTable(
-              rows:[{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'mark':'100','na': "155",'name':"Popz"},{'name':"Riyaz",'na': "144",'mark':'50'},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},],
+              rows:[{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'mark':'100','na': "155",'name':"Popz"},{'name':"Riyaz",'na': "144",'mark':'50'},],
               columns:[{'id':"name", 'label':'name'},{'id':"na", 'label':'nantha the legend'},{'id':"mark", 'label':'Mark'}]
-            )
+            ),
+            HtmlImage(src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",height:200,width:600 ,),
           ],
         ),
       ),

@@ -5,20 +5,18 @@ import 'package:html_widgets/html_widgets.dart';
 class HTMLTable extends StatelessWidget {
   final List columns;
   final List rows;
-  final double height;
 
   HTMLTable({
-    this.height,
     @required this.columns,
     @required this.rows,
- 
   });
 
   @override
   Widget build(BuildContext context) {
 
     return Container(
-      height: height != null ? height : 400,
+      margin: EdgeInsets.symmetric(vertical: 5),
+
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
            child: SingleChildScrollView(

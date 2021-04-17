@@ -8,3 +8,4 @@ export 'package:html_widgets/src/text/H5.dart';
 export 'package:html_widgets/src/text/H6.dart';
 export 'package:html_widgets/src/text/P.dart';
 export 'package:html_widgets/src/Table.dart';
+export 'package:html_widgets/src/HtmlImage.dart';
