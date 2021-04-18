@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:html_widgets/html_widgets.dart';
 
-
-
 void main() {
   runApp(MyApp());
 }
@@ -44,8 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Column(
-          children: <Widget>[
+        child: ListView(
+           children: <Widget>[
             H1(
               text: "Heading 1",
               color: Color(0xFF345628),
@@ -69,12 +67,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 getcb("Heading 2");
               },
             ),
-
+            H6(text: "heading 6"), 
             HTMLTable(
-              rows:[{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'mark':'100','na': "155",'name':"Popz"},{'name':"Riyaz",'na': "144",'mark':'50'},],
+              rows:[{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'mark':'100','na': "155",'name':"Popz"},{'name':"Riyaz",'na': "144",'mark':'50'},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},],
               columns:[{'id':"name", 'label':'name'},{'id':"na", 'label':'nantha the legend'},{'id':"mark", 'label':'Mark'}]
             ),
-            HtmlImage(src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",height:200,width:600 ,),
+            HtmlImage(
+              src: "images/cake.jpg",
+              onClick: (){
+                print("nantha the goat");
+              },
+            )
           ],
         ),
       ),
