@@ -77,11 +77,11 @@ class _MyHomePageState extends State<MyHomePage> {
             //   columns:[{'id':"name", 'label':'name'},{'id':"na", 'label':'nantha the legend'},{'id':"mark", 'label':'Mark'}]
             // ),
             HtmlImage(
-              src: "https://images.pexels.com/photos/4343451/pexels-photo-4343451.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+              src: "https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg",
               onClick: (){
                 print("nantha the goat");
               },
-              height: 200,
+              
             )
           ],
         ),

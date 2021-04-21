@@ -36,7 +36,6 @@ class HtmlImage extends StatelessWidget {
              fit: size != null ? _fitValues[_fitTypes.indexOf(size)] : _fitValues[0],
              loadingBuilder: (BuildContext context, Widget child,ImageChunkEvent loadingProgress) {
                if (loadingProgress == null) return child;
-               else 
                return  Shimmer.fromColors(
                    highlightColor: Colors.white,
                    baseColor: Colors.grey[300],
