@@ -14,6 +14,7 @@ class HeadingBuilder extends StatelessWidget {
   final num margin;
   final num padding;
   final bool isLoading;
+  final String textAlign;
   final Function() callBack;
 
   HeadingBuilder({
@@ -27,7 +28,8 @@ class HeadingBuilder extends StatelessWidget {
     @required this.defaultFontSize,
     @required this.defaultFontWeight,
     @required this.text,
-    this.isLoading = false
+    this.isLoading = false,
+    this.textAlign = 'left',
   });
 
   final List _fontWeight = [
@@ -42,6 +44,15 @@ class HeadingBuilder extends StatelessWidget {
     FontWeight.w900
   ];
 
+  final Map _textAlign = {
+    'center': TextAlign.center,
+    'left' :TextAlign.left,
+    'right' :TextAlign.right,
+    'start' :TextAlign.start,
+    'end': TextAlign.end,
+    'justify':TextAlign.justify,
+  };
+
   double density = WidgetsBinding.instance.window.devicePixelRatio;
 
   double randomWidth({double min = 0.30, double max = 0.80}){
@@ -51,7 +62,7 @@ class HeadingBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(margin != null ? margin.toDouble() : 0.0),
+      padding: EdgeInsets.all(margin != null ? margin.toDouble() : 5.0),
       child:isLoading ? Shimmer.fromColors(
               highlightColor: Colors.white,
               baseColor: Colors.grey[300],
@@ -66,9 +77,10 @@ class HeadingBuilder extends StatelessWidget {
               ),
             )
         : Container(
-           decoration: BoxDecoration(
-          color: bgColor,
-        ),
+          width: MediaQuery.of(context).size.width * 1.0,
+          decoration: BoxDecoration(
+           color: bgColor,
+          ),
         child: Padding(
           padding: EdgeInsets.all(padding != null ? padding.toDouble() : 0.0),
           child: GestureDetector(
@@ -84,6 +96,7 @@ class HeadingBuilder extends StatelessWidget {
                     : defaultFontWeight],
                 letterSpacing: 1.5,
               ),
+              textAlign: _textAlign[textAlign],
             ),
           ),
         ),

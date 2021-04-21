@@ -10,6 +10,7 @@ class H2 extends StatelessWidget {
   final num margin;
   final num padding;
   final bool isLoading;
+  final String textAlign;
   final Function() onClick;
 
   H2({
@@ -22,6 +23,7 @@ class H2 extends StatelessWidget {
     this.fontWeight,
     @required this.text,
     this.isLoading = false,
+    this.textAlign
   });
 
   @override
@@ -38,6 +40,7 @@ class H2 extends StatelessWidget {
       margin: margin,
       callBack: onClick,
       isLoading: isLoading,
+      textAlign: textAlign,
     );
   }
 }

@@ -10,6 +10,7 @@ class H1 extends StatelessWidget {
   final num margin;
   final num padding;
   final bool isLoading;
+  final String textAlign;
   final Function() onClick;
 
   H1({
@@ -21,6 +22,7 @@ class H1 extends StatelessWidget {
     this.fontSize,
     this.isLoading = false,
     this.fontWeight,
+    this.textAlign,
     @required this.text,
   });
  
@@ -38,6 +40,7 @@ class H1 extends StatelessWidget {
       margin: margin,
       callBack: onClick,
       isLoading: isLoading,
+      textAlign: textAlign,
     );
   }
 }

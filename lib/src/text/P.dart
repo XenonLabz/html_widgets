@@ -9,7 +9,8 @@ class P extends StatelessWidget {
   final num fontWeight;
   final num margin;
   final num padding;
-  final isLoading;
+  final bool isLoading;
+  final String textAlign;
   final Function() onClick;
 
   P({
@@ -21,6 +22,7 @@ class P extends StatelessWidget {
     this.fontSize,
     this.fontWeight,
     this.isLoading = false,
+    this.textAlign,
     @required this.text,
   });
  
@@ -38,6 +40,7 @@ class P extends StatelessWidget {
       margin: margin,
       callBack: onClick,
       isLoading: isLoading,
+      textAlign: textAlign,
     );
   }
 }
