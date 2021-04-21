@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shimmer/shimmer.dart';
+import 'dart:math';
 
 // ignore: must_be_immutable
 class HeadingBuilder extends StatelessWidget {
@@ -11,6 +13,7 @@ class HeadingBuilder extends StatelessWidget {
   final num defaultFontWeight;
   final num margin;
   final num padding;
+  final bool isLoading;
   final Function() callBack;
 
   HeadingBuilder({
@@ -24,6 +27,7 @@ class HeadingBuilder extends StatelessWidget {
     @required this.defaultFontSize,
     @required this.defaultFontWeight,
     @required this.text,
+    this.isLoading = false
   });
 
   final List _fontWeight = [
@@ -40,12 +44,29 @@ class HeadingBuilder extends StatelessWidget {
 
   double density = WidgetsBinding.instance.window.devicePixelRatio;
 
+  double randomWidth({double min = 0.30, double max = 0.80}){
+    return Random().nextDouble() * (max - min + 1) + min ;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(margin != null ? margin.toDouble() : 0.0),
-      child: Container(
-        decoration: BoxDecoration(
+      child:isLoading ? Shimmer.fromColors(
+              highlightColor: Colors.white,
+              baseColor: Colors.grey[300],
+              period: Duration(milliseconds: 800),
+              child: Container(
+                height:  fontSize != null ? fontSize.toDouble() : defaultFontSize,
+                width: MediaQuery.of(context).size.width * randomWidth(),
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(20)
+                ),
+              ),
+            )
+        : Container(
+           decoration: BoxDecoration(
           color: bgColor,
         ),
         child: Padding(

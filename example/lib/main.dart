@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: ListView(
+        child: Column(
            children: <Widget>[
             H1(
               text: "Heading 1",
@@ -55,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 getcb("Heading 1");
               },
               fontSize: 30,
+            
             ),
              H2(
               text: "Heading 2",
@@ -66,17 +67,21 @@ class _MyHomePageState extends State<MyHomePage> {
               onClick: () {
                 getcb("Heading 2");
               },
+              isLoading: true,
             ),
-            H6(text: "heading 6"), 
-            HTMLTable(
-              rows:[{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'mark':'100','na': "155",'name':"Popz"},{'name':"Riyaz",'na': "144",'mark':'50'},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},],
-              columns:[{'id':"name", 'label':'name'},{'id':"na", 'label':'nantha the legend'},{'id':"mark", 'label':'Mark'}]
-            ),
+            // P(text: "heading 6",
+            // isLoading: true,
+            // fontSize: 80,), 
+            // HTMLTable(
+            //   rows:[{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'mark':'100','na': "155",'name':"Popz"},{'name':"Riyaz",'na': "144",'mark':'50'},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},{'na': "113",'mark': "100" ,'name':"Nantha the GOAT"},],
+            //   columns:[{'id':"name", 'label':'name'},{'id':"na", 'label':'nantha the legend'},{'id':"mark", 'label':'Mark'}]
+            // ),
             HtmlImage(
-              src: "images/cake.jpg",
+              src: "https://images.pexels.com/photos/4343451/pexels-photo-4343451.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
               onClick: (){
                 print("nantha the goat");
               },
+              height: 200,
             )
           ],
         ),

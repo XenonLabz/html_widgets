@@ -9,6 +9,7 @@ class H5 extends StatelessWidget {
   final num fontWeight;
   final num margin;
   final num padding;
+  final bool isLoading;
   final Function() onClick;
 
   H5({
@@ -19,9 +20,10 @@ class H5 extends StatelessWidget {
     this.onClick,
     this.fontSize,
     this.fontWeight,
+    this.isLoading = false,
     @required this.text,
   });
-  //TODO: Need to change default values
+  
   @override
   Widget build(BuildContext context) {
     return HeadingBuilder(
@@ -35,6 +37,7 @@ class H5 extends StatelessWidget {
       padding: padding,
       margin: margin,
       callBack: onClick,
+      isLoading: isLoading,
     );
   }
 }
