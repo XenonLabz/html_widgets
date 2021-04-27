@@ -21,7 +21,6 @@ h1(
 #
 # h2
 
-If you want to use larger text with bold font weight, you can prefer to use `h2()`
 
 ```dart
 ...
