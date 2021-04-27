@@ -1,4 +1,4 @@
-## [0.0.1 + 1] 27.04.2021
+## [0.0.1+1] 27.04.2021
 
 - Formatted and optimized the code
 
