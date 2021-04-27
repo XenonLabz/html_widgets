@@ -1,6 +1,6 @@
 # html_widgets
 
-A Flutter Widget Approach for using HTML tags in your Apps.
+A Flutter Widget Approach for using HTML tags & CSS styles in your upcoming Apps.
 
 ## Text Widgets
 
