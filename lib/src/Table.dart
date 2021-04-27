@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
+/// HTMLTABLE widget corresponds in creating table tag.
 class HTMLTable extends StatelessWidget {
+
+  /// data of column of the table.
   final List columns;
+
+  /// data of rows of the table.
   final List rows;
 
   HTMLTable({

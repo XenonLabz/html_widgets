@@ -8,12 +8,24 @@ class HtmlImage extends StatelessWidget {
   final double margin;
   final Function() onClick;
 
+  /// HtmlImage widget corresponds in creating img tag.
   HtmlImage({
+    /// source of the image.
     @required this.src,
+
+    /// width of the image.
     this.width,
+
+    /// height of the image.
     this.height,
+
+    /// size of the image like css styles.
     this.size,
+
+    /// margin of the image.
     this.margin,
+
+    /// On Click function that can be executed on tapping the image.
     this.onClick,
   });
 

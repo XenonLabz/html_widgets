@@ -1,17 +1,38 @@
 import 'package:flutter/material.dart';
 import 'package:html_widgets/src/text/HeadingBuilder.dart';
 
+/// Heading 5 widget corresponds in creating H5 tag like text.
 class H5 extends StatelessWidget {
+    /// Text to be displayed.
   final String text;
+
+  /// Color of the text.
   final Color color;
+
+  /// Background Color of the text.
   final Color bgColor;
+
+  /// Font Size of the text. Default value of 32.0 will be passed if not provided.
   final num fontSize;
+
+  /// Font Weight of the text. Default value of 600 will be passed if not provided.
   final num fontWeight;
+
+  /// Margin around the contianer holding the text.
   final num margin;
+
+  /// Padding around the text.
   final num padding;
+
+  /// Loading state bool. Default will be false. If set true shimmer will be shown.
   final bool isLoading;
+
+  /// Aligning text. If not passed 'left' will be set.
   final String textAlign;
+
+  /// On Click function that can be executed on tapping the text.
   final Function() onClick;
+
 
   H5({
     this.color,

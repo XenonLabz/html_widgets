@@ -2,20 +2,49 @@ import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 import 'dart:math';
 
+
+/// HeadingBuilder widget corresponds in creating Heading tag like text.
 // ignore: must_be_immutable
 class HeadingBuilder extends StatelessWidget {
+     /// Text to be displayed.
   final String text;
+
+  /// Color of the text.
   final Color color;
+
+  /// Background Color of the text.
   final Color bgColor;
+
+  /// Font Size of the text. 
   final num fontSize;
-  final num fontWeight;
+
+  ///  Default value of 32.0 will be passed if fontSize not provided.
   final num defaultFontSize;
+
+  /// Font Weight of the text.
+  final num fontWeight;
+  
+  ///  Default value of 600 will be passed if fontWeight not provided.
   final num defaultFontWeight;
+
+  /// Margin around the contianer holding the text.
   final num margin;
+
+  /// Padding around the text.
   final num padding;
+
+  /// Loading state bool. Default will be false. If set true shimmer will be shown.
   final bool isLoading;
+
+  /// Aligning text. If not passed 'left' will be set.
   final String textAlign;
+
+  /// On Click function that can be executed on tapping the text.
   final Function() callBack;
+
+  
+  
+
 
   HeadingBuilder({
     this.color,
