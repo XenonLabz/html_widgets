@@ -8,7 +8,6 @@
 
 # h1
 
-If you want to use larger text with bold font weight, you can prefer to use `h1()`
 
 ```dart
 ...
@@ -18,22 +17,6 @@ h1(
 )
 ...
 ```
-
-There are several properties you can pass to customize the `heading widgets` and `paragraph widget`
-
-## api reference
-
-| Properties | Work                                                                                                                                                 | Default Value                    | Values                                               |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------- |
-| color      | Sets the color of the text                                                                                                                           | black                            | Color                                                |
-| bgColor    | Sets the background color                                                                                                                            | null                             | Color                                                |
-| margin     | Gives margin around the text container                                                                                                               | null                             | num                                                  |
-| padding    | Gives padding for the container holding the text                                                                                                     | null                             | num                                                  |
-| fontSize   | Changes the font size of the heading and P widget                                                                                                    | 32 | num                                                  |
-| fontWeight | Changes the font weight of the heading and P widget                                                                                                  | 600 | 100, 200, 300, 400, 500, 600, 700, 800, 900          |
-| isLoading  | If you're loading something and want to show the text after the process you can set it to true. It will show a shimmer effect until it sets to false | false                            | bool                                                 |
-| textAlign  | Align your text with respect to the container holding it                                                                                             | 'left'                           | 'center', 'left', 'right', 'start', 'end', 'justify' |
-| onClick    | A function needs to be executed on taping                                                                                                            | null                             | Function                                             |
 
 #
 # h2
@@ -50,26 +33,10 @@ h2(
 ...
 ```
 
-There are several properties you can pass to customize the `heading widgets` and `paragraph widget`
-
-## api reference
-
-| Properties | Work                                                                                                                                                 | Default Value                    | Values                                               |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------- |
-| color      | Sets the color of the text                                                                                                                           | black                            | Color                                                |
-| bgColor    | Sets the background color                                                                                                                            | null                             | Color                                                |
-| margin     | Gives margin around the text container                                                                                                               | null                             | num                                                  |
-| padding    | Gives padding for the container holding the text                                                                                                     | null                             | num                                                  |
-| fontSize   | Changes the font size of the heading and P widget                                                                                                    | 24 | num                                                  |
-| fontWeight | Changes the font weight of the heading and P widget                                                                                                  | 600 | 100, 200, 300, 400, 500, 600, 700, 800, 900          |
-| isLoading  | If you're loading something and want to show the text after the process you can set it to true. It will show a shimmer effect until it sets to false | false                            | bool                                                 |
-| textAlign  | Align your text with respect to the container holding it                                                                                             | 'left'                           | 'center', 'left', 'right', 'start', 'end', 'justify' |
-| onClick    | A function needs to be executed on taping                                                                                                            | null                             | Function  
 
 #
 # h3
 
-If you want to use larger text with bold font weight, you can prefer to use `h3()`
 
 ```dart
 ...
@@ -81,26 +48,12 @@ h3(
 ...
 ```
 
-There are several properties you can pass to customize the `heading widgets` and `paragraph widget`
 
-## api reference
 
-| Properties | Work                                                                                                                                                 | Default Value                    | Values                                               |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------- |
-| color      | Sets the color of the text                                                                                                                           | black                            | Color                                                |
-| bgColor    | Sets the background color                                                                                                                            | null                             | Color                                                |
-| margin     | Gives margin around the text container                                                                                                               | null                             | num                                                  |
-| padding    | Gives padding for the container holding the text                                                                                                     | null                             | num                                                  |
-| fontSize   | Changes the font size of the heading and P widget                                                                                                    | 20.8 | num                                                  |
-| fontWeight | Changes the font weight of the heading and P widget                                                                                                  | 600 | 100, 200, 300, 400, 500, 600, 700, 800, 900          |
-| isLoading  | If you're loading something and want to show the text after the process you can set it to true. It will show a shimmer effect until it sets to false | false                            | bool                                                 |
-| textAlign  | Align your text with respect to the container holding it                                                                                             | 'left'                           | 'center', 'left', 'right', 'start', 'end', 'justify' |
-| onClick    | A function needs to be executed on taping                                                                                                            | null                             | Function  
 
 #
 # h4
 
-If you want to use larger text with bold font weight, you can prefer to use `h4()`
 
 ```dart
 ...
@@ -111,27 +64,9 @@ h4(
 ...
 ```
 
-There are several properties you can pass to customize the `heading widgets` and `paragraph widget`
-
-## api reference
-
-| Properties | Work                                                                                                                                                 | Default Value                    | Values                                               |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------- |
-| color      | Sets the color of the text                                                                                                                           | black                            | Color                                                |
-| bgColor    | Sets the background color                                                                                                                            | null                             | Color                                                |
-| margin     | Gives margin around the text container                                                                                                               | null                             | num                                                  |
-| padding    | Gives padding for the container holding the text                                                                                                     | null                             | num                                                  |
-| fontSize   | Changes the font size of the heading and P widget                                                                                                    | 16 | num                                                  |
-| fontWeight | Changes the font weight of the heading and P widget                                                                                                  | 600 | 100, 200, 300, 400, 500, 600, 700, 800, 900          |
-| isLoading  | If you're loading something and want to show the text after the process you can set it to true. It will show a shimmer effect until it sets to false | false                            | bool                                                 |
-| textAlign  | Align your text with respect to the container holding it                                                                                             | 'left'                           | 'center', 'left', 'right', 'start', 'end', 'justify' |
-| onClick    | A function needs to be executed on taping                                                                                                            | null                             | Function  
-
-
 #
 # h5
 
-If you want to use larger text with bold font weight, you can prefer to use `h5()`
 
 ```dart
 ...
@@ -142,27 +77,9 @@ h5(
 ...
 ```
 
-There are several properties you can pass to customize the `heading widgets` and `paragraph widget`
-
-## api reference
-
-| Properties | Work                                                                                                                                                 | Default Value                    | Values                                               |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------- |
-| color      | Sets the color of the text                                                                                                                           | black                            | Color                                                |
-| bgColor    | Sets the background color                                                                                                                            | null                             | Color                                                |
-| margin     | Gives margin around the text container                                                                                                               | null                             | num                                                  |
-| padding    | Gives padding for the container holding the text                                                                                                     | null                             | num                                                  |
-| fontSize   | Changes the font size of the heading and P widget                                                                                                    | 12.8 | num                                                  |
-| fontWeight | Changes the font weight of the heading and P widget                                                                                                  | 600 | 100, 200, 300, 400, 500, 600, 700, 800, 900          |
-| isLoading  | If you're loading something and want to show the text after the process you can set it to true. It will show a shimmer effect until it sets to false | false                            | bool                                                 |
-| textAlign  | Align your text with respect to the container holding it                                                                                             | 'left'                           | 'center', 'left', 'right', 'start', 'end', 'justify' |
-| onClick    | A function needs to be executed on taping                                                                                                            | null                             | Function  
-
-
 #
 # h6
 
-If you want to use larger text with bold font weight, you can prefer to use `h6()`
 
 ```dart
 ...
@@ -173,27 +90,10 @@ h6(
 ...
 ```
 
-There are several properties you can pass to customize the `heading widgets` and `paragraph widget`
-
-## api reference
-
-| Properties | Work                                                                                                                                                 | Default Value                    | Values                                               |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------- |
-| color      | Sets the color of the text                                                                                                                           | black                            | Color                                                |
-| bgColor    | Sets the background color                                                                                                                            | null                             | Color                                                |
-| margin     | Gives margin around the text container                                                                                                               | null                             | num                                                  |
-| padding    | Gives padding for the container holding the text                                                                                                     | null                             | num                                                  |
-| fontSize   | Changes the font size of the heading and P widget                                                                                                    | 11.2 | num                                                  |
-| fontWeight | Changes the font weight of the heading and P widget                                                                                                  | 600 | 100, 200, 300, 400, 500, 600, 700, 800, 900          |
-| isLoading  | If you're loading something and want to show the text after the process you can set it to true. It will show a shimmer effect until it sets to false | false                            | bool                                                 |
-| textAlign  | Align your text with respect to the container holding it                                                                                             | 'left'                           | 'center', 'left', 'right', 'start', 'end', 'justify' |
-| onClick    | A function needs to be executed on taping                                                                                                            | null                             | Function  
-
-
 #
 # P
 
-If you want to use larger text with bold font weight, you can prefer to use `P()`
+
 
 ```dart
 ...
@@ -214,8 +114,8 @@ There are several properties you can pass to customize the `heading widgets` and
 | bgColor    | Sets the background color                                                                                                                            | null                             | Color                                                |
 | margin     | Gives margin around the text container                                                                                                               | null                             | num                                                  |
 | padding    | Gives padding for the container holding the text                                                                                                     | null                             | num                                                  |
-| fontSize   | Changes the font size of the heading and P widget                                                                                                    | 16 | num                                                  |
-| fontWeight | Changes the font weight of the heading and P widget                                                                                                  | 400 | 100, 200, 300, 400, 500, 600, 700, 800, 900          |
+| fontSize   | Changes the font size of the heading and P widget                                                                                                    | according to the widget | num                                                  |
+| fontWeight | Changes the font weight of the heading and P widget                                                                                                  | according to the widget 700 for headings, 400 for P | 100, 200, 300, 400, 500, 600, 700, 800, 900          |
 | isLoading  | If you're loading something and want to show the text after the process you can set it to true. It will show a shimmer effect until it sets to false | false                            | bool                                                 |
 | textAlign  | Align your text with respect to the container holding it                                                                                             | 'left'                           | 'center', 'left', 'right', 'start', 'end', 'justify' |
 | onClick    | A function needs to be executed on taping                                                                                                            | null                             | Function  
