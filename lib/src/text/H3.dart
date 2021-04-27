@@ -3,7 +3,7 @@ import 'package:html_widgets/src/text/HeadingBuilder.dart';
 
 /// Heading 3 widget corresponds in creating H3 tag like text.
 class H3 extends StatelessWidget {
-    /// Text to be displayed.
+  /// Text to be displayed.
   final String text;
 
   /// Color of the text.
@@ -33,7 +33,6 @@ class H3 extends StatelessWidget {
   /// On Click function that can be executed on tapping the text.
   final Function() onClick;
 
-
   H3({
     this.color,
     this.bgColor,
@@ -46,7 +45,7 @@ class H3 extends StatelessWidget {
     this.textAlign,
     @required this.text,
   });
-  
+
   @override
   Widget build(BuildContext context) {
     return HeadingBuilder(

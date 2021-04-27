@@ -3,7 +3,7 @@ import 'package:html_widgets/src/text/HeadingBuilder.dart';
 
 /// Heading 2 widget corresponds in creating H2 tag like text.
 class H2 extends StatelessWidget {
-    /// Text to be displayed.
+  /// Text to be displayed.
   final String text;
 
   /// Color of the text.
@@ -33,18 +33,17 @@ class H2 extends StatelessWidget {
   /// On Click function that can be executed on tapping the text.
   final Function() onClick;
 
-  H2({
-    this.color,
-    this.bgColor,
-    this.margin,
-    this.padding,
-    this.onClick,
-    this.fontSize,
-    this.fontWeight,
-    @required this.text,
-    this.isLoading = false,
-    this.textAlign
-  });
+  H2(
+      {this.color,
+      this.bgColor,
+      this.margin,
+      this.padding,
+      this.onClick,
+      this.fontSize,
+      this.fontWeight,
+      @required this.text,
+      this.isLoading = false,
+      this.textAlign});
 
   @override
   Widget build(BuildContext context) {

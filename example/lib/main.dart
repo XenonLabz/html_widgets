@@ -7,7 +7,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -72,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: 20,
               fontWeight: 700,
               onClick: () {
-                getcb("Heading 2 Nanthakumaran is a goat");
+                getcb("Heading 2");
               },
             ),
             H3(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:html_widgets/src/text/HeadingBuilder.dart';
 
 class P extends StatelessWidget {
-   /// Text to be displayed.
+  /// Text to be displayed.
   final String text;
 
   /// Color of the text.
@@ -32,7 +32,6 @@ class P extends StatelessWidget {
   /// On Click function that can be executed on tapping the text.
   final Function() onClick;
 
-
   P({
     this.color,
     this.bgColor,
@@ -45,7 +44,7 @@ class P extends StatelessWidget {
     this.textAlign,
     @required this.text,
   });
- 
+
   @override
   Widget build(BuildContext context) {
     return HeadingBuilder(

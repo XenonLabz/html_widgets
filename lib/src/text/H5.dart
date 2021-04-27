@@ -3,7 +3,7 @@ import 'package:html_widgets/src/text/HeadingBuilder.dart';
 
 /// Heading 5 widget corresponds in creating H5 tag like text.
 class H5 extends StatelessWidget {
-    /// Text to be displayed.
+  /// Text to be displayed.
   final String text;
 
   /// Color of the text.
@@ -33,7 +33,6 @@ class H5 extends StatelessWidget {
   /// On Click function that can be executed on tapping the text.
   final Function() onClick;
 
-
   H5({
     this.color,
     this.bgColor,
@@ -46,7 +45,7 @@ class H5 extends StatelessWidget {
     this.textAlign,
     @required this.text,
   });
-  
+
   @override
   Widget build(BuildContext context) {
     return HeadingBuilder(
