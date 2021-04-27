@@ -1,8 +1,7 @@
 name: html_widgets
-description: A new Flutter package project.
+description: A Flutter Widget Approach for using HTML tags in your Apps.
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/XenonLabz/html_widgets
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
